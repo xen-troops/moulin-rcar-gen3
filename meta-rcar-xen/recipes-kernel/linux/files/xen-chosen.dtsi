@@ -11,7 +11,7 @@
 
 / {
 	chosen {
-		bootargs = "dom0_mem=1G console=dtuart dtuart=serial0 dom0_max_vcpus=4 loglvl=info hmp-unsafe=true xsm=flask";
+		bootargs = "dom0_mem=1G console=dtuart dtuart=serial0 loglvl=info hmp-unsafe=true xsm=flask";
 		xen,dom0-bootargs = "console=hvc0 ignore_loglevel clk_ignore_unused=1 ";
 		/delete-property/stdout-path;
 		modules {
@@ -27,4 +27,8 @@
 			};
 		};
 	};
+
+	/delete-node/thermal-zones;
+	/delete-node/pmu_a57;
+	/delete-node/pmu_a53;
 };
