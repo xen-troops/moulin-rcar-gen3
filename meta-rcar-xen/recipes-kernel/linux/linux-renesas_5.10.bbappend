@@ -30,4 +30,9 @@ python do_generate_dtses () {
                 f.write(l)
 }
 
+# Fixup DTS trees: convert ipmmu-mmu-r8a779* entries to ipmmu-r8a779*
+do_configure_append () {
+    sed -i "s/ipmmu\-mmu\-r8a/ipmmu\-r8a/g" ${S}/arch/${ARCH}/boot/dts/renesas/*
+}
+
 addtask generate_dtses before do_compile after do_configure
