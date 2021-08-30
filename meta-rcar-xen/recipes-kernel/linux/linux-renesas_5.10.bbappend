@@ -2,6 +2,7 @@ FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 
 SRC_URI_append = " \
     file://xen-chosen.dtsi;subdir=git/arch/${ARCH}/boot/dts/renesas \
+    file://0001-dma-mapping-handle-vmalloc-addresses-in-dma_common_-.patch \
 "
 
 python __anonymous () {
