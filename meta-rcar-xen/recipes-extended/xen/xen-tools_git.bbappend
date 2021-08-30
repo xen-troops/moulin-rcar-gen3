@@ -35,6 +35,8 @@ FILES_${PN}-libxendevicemodel-dev = " \
 
 FILES_${PN}-misc_append = "\
     ${libdir}/xen/bin/depriv-fd-checker \
+    ${libdir}/xen/bin/test-resource \
+    ${libdir}/xen/bin/test-xenstore \
     ${bindir}/vchan-socket-proxy \
     "
 
