@@ -67,7 +67,7 @@ filename. `r8a77960-salvator-xs-xen.dtb` for example.
 `bootargs` now are handled by Xen, not by Linux kernel. Xen will fail
 to boot if U-Boot variable `bootargs` hold values for Linux
 kernel. Either clear this variable, or set it to something like
-`dom0_mem=1G console=dtuart dtuart=serial0 loglvl=info hmp-unsafe=true
+`dom0_mem=2G console=dtuart dtuart=serial0 loglvl=info hmp-unsafe=true
 xsm=flask`.
 
 Linux bootargs are provided via DTB file. By default there is no root

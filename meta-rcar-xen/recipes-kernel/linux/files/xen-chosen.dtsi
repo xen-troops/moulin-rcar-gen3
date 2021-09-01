@@ -11,7 +11,7 @@
 
 / {
 	chosen {
-		bootargs = "dom0_mem=1G console=dtuart dtuart=serial0 loglvl=info hmp-unsafe=true xsm=flask";
+		bootargs = "dom0_mem=2G console=dtuart dtuart=serial0 loglvl=info hmp-unsafe=true xsm=flask";
 		xen,dom0-bootargs = "console=hvc0 ignore_loglevel clk_ignore_unused=1 ";
 		/delete-property/stdout-path;
 		modules {
