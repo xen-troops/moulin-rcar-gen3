@@ -104,11 +104,11 @@ parameters:
       overrides:
         variables:
           MACHINE: "salvator-x"
-          SOC_FAMILY: "r8a7795"
     h3ulcb:
       overrides:
         variables:
           MACHINE: "h3ulcb"
+          SOC_FAMILY: "r8a7795"
     m3ulcb:
       overrides:
         variables:
